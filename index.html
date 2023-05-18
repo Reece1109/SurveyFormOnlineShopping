@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Online Shopping Survey Form</h1>
+  
+    <form id="surveyForm" action="https://formspree.io/f/xdovjjbp" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+    
+      <label for="card-safety">How safe did you feel while sharing your card details?</label>
+      <select id="card-safety" name="card-safety" required>
+        <option value="">Please select</option>
+        <option value="very-safe">Very safe</option>
+        <option value="safe">Safe</option>
+        <option value="neutral">Neutral</option>
+        <option value="unsafe">Unsafe</option>
+        <option value="very-unsafe">Very unsafe</option>
+      </select>
+    
+      <label for="checkout-experience">How was the checkout experience overall?</label>
+      <select id="checkout-experience" name="checkout-experience" required>
+        <option value="">Please select</option>
+        <option value="excellent">Excellent</option>
+        <option value="good">Good</option>
+        <option value="fair">Fair</option>
+        <option value="poor">Poor</option>
+        <option value="very-poor">Very poor</option>
+      </select>
+    
+      <label for="payment-experience">Did you experience a hassle-free payment experience?</label>
+      <select id="payment-experience" name="payment-experience" required>
+        <option value="">Please select</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    
+      <label for="buy-likelihood">On a scale of 0-10, how likely are you to buy from us again?</label>
+      <input type="number" id="buy-likelihood" name="buy-likelihood" min="0" max="10" required>
+    
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
